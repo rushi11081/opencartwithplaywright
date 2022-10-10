@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Playwright.opencart.Tests.LoginPageTest">
+      <class name="Playwright.opencart.Tests.HomePageTest">
         <methods>
           <include name="setup"/>
+          <include name="searchTest"/>
           <include name="end"/>
-          <include name="forgotPwdLinkExistTest"/>
+          <include name="HomepageTitleTest"/>
+          <include name="HomepageURLTest"/>
         </methods>
-      </class> <!-- Playwright.opencart.Tests.LoginPageTest -->
+      </class> <!-- Playwright.opencart.Tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

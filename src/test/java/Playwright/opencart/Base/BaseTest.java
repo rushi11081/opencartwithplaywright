@@ -1,6 +1,5 @@
 package Playwright.opencart.Base;
 
-import java.nio.file.Paths;
 import java.util.Properties;
 
 import org.testng.annotations.AfterTest;
@@ -46,7 +45,7 @@ public class BaseTest
 	 @AfterTest
 	 public void end()
 	 {
-		pf.closescreenshot();
+		
 		 page.context().browser().close();
 	 }
 	 

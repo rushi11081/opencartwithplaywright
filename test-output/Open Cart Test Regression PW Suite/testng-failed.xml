@@ -1,33 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Open Cart Test Regression PW Suite]" guice-stage="DEVELOPMENT" verbose="4">
+<suite thread-count="2" parallel="tests" name="Failed suite [Open Cart Test Regression PW Suite]" guice-stage="DEVELOPMENT" verbose="2">
   <listeners>
     <listener class-name="Playwright.opencart.Listner.OpencartListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Open Cart Login Page Test(failed)" verbose="4">
+  <test thread-count="2" parallel="tests" name="Open Cart Login Page Test(failed)" verbose="2">
     <classes>
       <class name="Playwright.opencart.Tests.LoginPageTest">
         <methods>
           <include name="setup"/>
           <include name="end"/>
           <include name="forgotPwdLinkExistTest"/>
-          <include name="appLoginTest"/>
-          <include name="loginPageNavigationTest"/>
         </methods>
       </class> <!-- Playwright.opencart.Tests.LoginPageTest -->
     </classes>
   </test> <!-- Open Cart Login Page Test(failed) -->
-  <test thread-count="2" parallel="tests" name="Open Cart Home Page Test(failed)" verbose="4">
-    <classes>
-      <class name="Playwright.opencart.Tests.HomePageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="searchTest"/>
-          <include name="end"/>
-          <include name="HomepageTitleTest"/>
-          <include name="HomepageURLTest"/>
-        </methods>
-      </class> <!-- Playwright.opencart.Tests.HomePageTest -->
-    </classes>
-  </test> <!-- Open Cart Home Page Test(failed) -->
 </suite> <!-- Failed suite [Open Cart Test Regression PW Suite] -->

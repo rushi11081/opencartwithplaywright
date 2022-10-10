@@ -51,9 +51,9 @@ public class PlaywrightFactory
 			break;
 		}
 		
-		browsercontxt=browser.newContext();
+		browsercontxt=browser.newContext(new Browser.NewContextOptions().setRecordVideoDir(Paths.get("myvideo/")));
 		
-		opengetscreenshot();
+		//opengetscreenshot();
 		
 		page=browsercontxt.newPage();
 		
@@ -85,7 +85,7 @@ public class PlaywrightFactory
 		
 	}
 	
-	public static void opengetscreenshot()
+/*	public static void opengetscreenshot()
 	{
 		try {
 			browsercontxt.tracing().start(new Tracing.StartOptions()
@@ -102,5 +102,5 @@ public class PlaywrightFactory
 	{
 		browsercontxt.tracing().stop(new Tracing.StopOptions()
 	    		  .setPath(Paths.get("trace1.zip")));
-	}
+	}*/
 }
